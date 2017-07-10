@@ -7,11 +7,13 @@ use Illuminate\Http\Request;
 
 class BirdhouseController extends Controller
 {
-    function index()
+    public function index()
     {
         $birdhouses = Birdhouse::latest()->get();
 
-        if (request()->wantsJson()) return $birdhouses;
+        if (request()->wantsJson()) {
+            return $birdhouses;
+        }
 
         return view('birdhouses.index', compact('birdhouses'));
     }

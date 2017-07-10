@@ -13,7 +13,7 @@ indent_style = space
 indent_size = 4
 
 # Styling files
-[*.{sass}]
+[*.{sass,yaml}]
 indent_size = 2
 
 # Markdown files

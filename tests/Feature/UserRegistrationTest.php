@@ -34,6 +34,5 @@ class UserRegistrationTest extends TestCase
         $response = $this->getJson('/birdhouses')->json();
 
         $this->assertCount(1, $response);
-
     }
 }
